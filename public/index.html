@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Paintball MP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="bars">
+      <div class="bar"><span>HP</span><div class="track"><div id="hpBar" class="fill"></div></div></div>
+      <div class="bar"><span>Erase</span><div class="track"><div id="eraseBar" class="fill erase"></div></div></div>
+    </div>
+    <div id="status"></div>
+  </div>
+  <canvas id="game"></canvas>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
